@@ -75,8 +75,16 @@ header a {
     padding: 1rem;
 }
 
+
+/* image */
+
 img {
     border-radius: 0.5rem;
+}
+
+img.small {
+    max-width: 5rem;
+    width: 100%;
 }
 
 img.medium {
@@ -127,6 +135,15 @@ a.brand {
     color: #fff;
 }
 
+span.badge {
+    background-color: #f02020;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +165,10 @@ a.brand {
 
 .col-2 {
     flex: 2 1 50rem;
+}
+
+.min-30 {
+    min-width: 30rem;
 }
 
 .card {
