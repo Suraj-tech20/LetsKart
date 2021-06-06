@@ -1,4 +1,20 @@
+import bcrypt from 'bcryptjs';
 const data = {
+    users: [{
+            name: 'Suraj',
+            email: 'admin@example.com',
+            // 8 for random salt which is provide autometically
+            password: bcrypt.hashSync('1243', 8),
+            isAdmin: true,
+        },
+        {
+            name: 'John',
+            email: 'user@example.com',
+            // 8 for random salt which is provide autometically
+            password: bcrypt.hashSync('1243', 8),
+            isAdmin: false,
+        },
+    ],
     products: [{
 
             _id: '1',
