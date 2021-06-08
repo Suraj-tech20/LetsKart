@@ -4,14 +4,14 @@ const data = {
             name: 'Suraj',
             email: 'admin@example.com',
             // 8 for random salt which is provide autometically
-            password: bcrypt.hashSync('1243', 8),
+            password: bcrypt.hashSync('1234', 8),
             isAdmin: true,
         },
         {
             name: 'John',
             email: 'user@example.com',
             // 8 for random salt which is provide autometically
-            password: bcrypt.hashSync('1243', 8),
+            password: bcrypt.hashSync('1234', 8),
             isAdmin: false,
         },
     ],
