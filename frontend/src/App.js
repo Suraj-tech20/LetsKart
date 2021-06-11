@@ -5,6 +5,7 @@ import { signout } from './actions/userActions';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import registerScreen from './screens/RegisterScreen';
 import SigninScreen from './screens/SigninScreen';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             </div>
             <div>
               <Link to="/cart">Cart
-              {cartItems.length > 0 && (<span className="badge">{cartItems.length}</span>)}
+                {cartItems.length > 0 && (<span className="badge">{cartItems.length}</span>)}
               </Link>
               {
                 userInfo ? (
@@ -44,11 +45,12 @@ function App() {
             <Route path="/cart/:id?" component={CartScreen}></Route>
             <Route exact path='/' component={HomeScreen}></Route>
             <Route path="/signin" component={SigninScreen}></Route>
+            <Route path="/register" component={registerScreen}></Route>
             <Route exact path="/product/:id" component={ProductScreen}></Route>
           </main>
           <footer className="row center">
             All right reserved
-        </footer>
+          </footer>
         </div>
       </BrowserRouter>
     </>
