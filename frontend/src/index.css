@@ -245,7 +245,6 @@ span.badge {
 
 .form label {
     margin: 1rem 0;
-    display: block;
 }
 
 
@@ -285,9 +284,15 @@ span.badge {
     color: #c0c0c0;
     flex: 1;
     padding: 1rem;
+    font-weight: bold;
 }
 
 .checkout-steps>div.active {
     border-top-color: #f08000;
     color: #f08000;
+}
+
+#paypal,
+#paytm {
+    margin-right: 1rem;
 }
