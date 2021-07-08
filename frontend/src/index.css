@@ -229,6 +229,11 @@ span.badge {
     margin: 1.5rem 0;
 }
 
+.alert-success {
+    color: #20a020;
+    background-color: #eeffe0;
+}
+
 
 /* Form */
 
